@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contato</title>
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Montserrat', sans-serif;
+			background-color: #fcf5a5;
+		}
+		h1 {
+			background-color: #fcf5a5;
+			padding: 20px;
+			text-align: center;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+		}
+        h2{
+            font-size: 36px;
+			font-weight: 700;
+			margin-top: 0px;
+			text-align: center;
+        }
+		h3 {
+			font-size: 36px;
+			font-weight: 700;
+			margin-top: 1px;
+			text-align: center;
+		}
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+			border-radius: 4px;
+		}
+		label {
+			display: block;
+			font-size: 18px;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+		input, textarea {
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border: none;
+			border-radius: 4px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #000;
+			color: #fff;
+			cursor: pointer;
+			transition: background-color 0.3s ease-in-out;
+		}
+		input[type="submit"]:hover {
+			background-color: #fff;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		<img src="img/logo1.png" alt="logo" width="500px">
+	</h1>
+    <h2>
+        <p> <img src="img/insta.png" alt="instagram" width="40px"><a href="https://www.instagram.com/pequenocotolengo_/?r=nametag">INSTAGRAM</a></p>
+        <p><img src="img/youtube.png" alt="youtube" width="40px"><a href="https://www.youtube.com/channel/UChS5I1eNesR3yly3ypMp1DQ?app=desktop">YOUTUBE</a></p>
+        <P><img src="img/whats.jpg" alt="WHATSAPP" width="40px"><a href="https://api.whatsapp.com/send/?phone=5563981485588&text&type=phone_number&app_absent=0">WHATSAPP</a></P>
+    </h2>
+	<h3>Entre em Contato Conosco</h3>
+	<form action="enviar_email.php" method="post">
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" placeholder="Seu nome completo"><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Seu endereço de email"><br>
+
+        <label for="telefone">Telefone:</label>
+		<input type="telefone" id="telefone" name="telefone" placeholder="Seu numero de telefone"><br>
+
+		<label for="mensagem">Mensagem:</label><br>
+		<textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui"></textarea><br>
+
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
